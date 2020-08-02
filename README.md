@@ -1,5 +1,7 @@
-![Alt text](public/Screen.png?raw=true "Covid-19-tracker")
+COVID-19-Tracker with charts
 
-COVID-19-Tracker
+### npm i
 
-Use npm i and npm start
+### npm start
+
+https://covid19trackerapp2020.netlify.app/
