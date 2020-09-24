@@ -32,7 +32,11 @@ class App extends React.Component {
         <Country handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
         <div dangerouslySetInnerHTML='<script data-ad-client=" ca-pub-4511574107741478" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' >
-        </div >
+          <div id="scriptTarget" />
+          <div className="main">
+          </div>
+        </div>
+      </div >
 
     );
   }
