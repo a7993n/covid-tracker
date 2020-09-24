@@ -16,22 +16,24 @@ class App extends React.Component {
     this.setState({ data: fetchedData });
   }
 
-  handleCountryChange = async(country) => {
+  handleCountryChange = async (country) => {
     const fetchedData = await fetchData(country);
 
     this.setState({ data: fetchedData, country: country });
   }
 
-  render(){
+  render() {
     const { data, country } = this.state;
 
     return (
       <div className={styles.container}>
-        <img src={covidImg} className={styles.image} alt="COVID-19"/>
-        <Cards data={ data }/>
-        <Country handleCountryChange={ this.handleCountryChange }/>
-        <Chart data={data} country={country}/>
-      </div>
+        <img src={covidImg} className={styles.image} alt="COVID-19" />
+        <Cards data={data} />
+        <Country handleCountryChange={this.handleCountryChange} />
+        <Chart data={data} country={country} />
+        <div dangerouslySetInnerHTML='<script data-ad-client=" ca-pub-4511574107741478" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' >
+        </div >
+
     );
   }
 }
